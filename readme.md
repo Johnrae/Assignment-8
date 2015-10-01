@@ -1,3 +1,3 @@
 ###Assignment 8 
 
-so much java 
+javascript is awful and i want to cry
