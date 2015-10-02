@@ -11,37 +11,37 @@
   //   })
 
 
-  // created the array of prices
+  ///////// created the array of prices //////////////
 
   var prices = items.map( function(item){
     return item.price;
   });
 
-  console.log(prices);
+  // console.log(prices);
 
-  //added prices together
+  ///////// added prices together //////////////
 
   var sum = prices.reduce( function (prev , next) {
     return prev + next;
   });
-  console.log(sum);
+  // console.log(sum);
 
-  // divide by total # of items
+  ///////// divide by total # of items //////////////
 
   var avg = sum / items.length;
-  console.log(avg);
+  // console.log(avg);
 
-  // convert to 2 decimal places
+ ///////// convert to 2 decimal places //////////////
 
   var convertedAvg = avg.toFixed(2);
-  console.log(convertedAvg);
+  // console.log(convertedAvg);
 
-  // make it a string
+  ///////// make it a string /////////////
   
   var str = 'The average price is $' + convertedAvg;
-  console.log(str);
+  // console.log(str);
 
-  // put it on da page
+  ///////// put it on da page //////////////
   
   var answer1 = document.querySelector('#answer1');
 
@@ -49,9 +49,13 @@
 
   answer1.appendChild(textNode);
 
+}());
+
   //========================================================//
   //----------------------(Question 2)----------------------//
   //========================================================//
+
+(function (){ // open fun
 
   // Filter prices
 
@@ -60,14 +64,14 @@
       return item;
   }});
 
-    console.log(affordable);
+    // console.log(affordable);
 
   // mapping title
 
     var affordableTitle = affordable.map(function(item){
       return item.title
     })
-    console.log(affordableTitle)
+    // console.log(affordableTitle)
 
   //assign array
 
@@ -103,41 +107,49 @@
 
 
 
+}()); // close fun
 
   //========================================================//
   //----------------------(Question 3)----------------------//
   //========================================================//
 
-    
+(function (){   
 
+  ////////////////////    Map GBP   ///////////////////////
+    var curCode = items.map(function(item){
+      return items.currency_code('');
+    });
+     console.log(curCode)
 
-
-
+}());
 
   //========================================================//
   //----------------------(Question 4)----------------------//
   //========================================================//
 
+(function (){
 
 
 
 
+}());
 
   //========================================================//
   //----------------------(Question 5)----------------------//
   //========================================================//
 
+(function (){
 
 
 
 
 
-
+}());
   //========================================================//
   //----------------------(Question 6)----------------------//
   //========================================================//
+(function (){
 
 
 
-
-})();
+}());
