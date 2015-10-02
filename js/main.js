@@ -174,7 +174,7 @@
     return item.title + ' is made of wood.';
   });
 
-  addParagraph("#answer4",ans4)
+  addList("#answer4",ans4)
 
 }());
 
@@ -206,14 +206,14 @@
     var node = document.createTextNode(text);
     p.appendChild(node);
     container.appendChild(p);
-   }
+   };
 
    //filtering material lengths
 
  var ssh = items.filter(function(item){
   return item.materials.length >= 8;
  })
- console.log(ssh)
+ // console.log(ssh)
 
 //adding list to html
 
@@ -232,6 +232,22 @@
   //----------------------(Question 6)----------------------//
  //========================================================//
 (function (){
+
+ function addParagraph(selector, text) {
+    var container = document.querySelector(selector);
+    var p = document.createElement('p');
+    var node = document.createTextNode(text);
+    p.appendChild(node);
+    container.appendChild(p);
+   };
+
+    //
+
+  var madeBy = items.filter(function(item){
+    return item['who_made'] === 'i_did';
+  });
+
+  addParagraph('#answer6', madeBy.length + ' were made by their sellers');
 
 
 
