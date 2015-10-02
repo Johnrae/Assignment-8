@@ -174,7 +174,7 @@
     return item.title + ' is made of wood.';
   });
 
-  addList("#answer4",ans4)
+  addParagraph("#answer4",ans4)
 
 }());
 
@@ -199,6 +199,31 @@
 
    container.appendChild(ul);
  };
+
+ function addParagraph(selector, text) {
+    var container = document.querySelector(selector);
+    var p = document.createElement('p');
+    var node = document.createTextNode(text);
+    p.appendChild(node);
+    container.appendChild(p);
+   }
+
+   //filtering material lengths
+
+ var ssh = items.filter(function(item){
+  return item.materials.length >= 8;
+ })
+ console.log(ssh)
+
+//adding list to html
+
+  ssh.forEach(function(item){
+    addParagraph('#answer5', item.title + ' has ' + item.materials.length + ' materials:');
+    addList('#answer5', item.materials );
+
+
+  });
+
 
 
 
