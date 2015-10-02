@@ -1,8 +1,8 @@
 (function (){
 
-  //========================================================//
+   //========================================================//
   //----------------------(Question 1)----------------------//
-  //========================================================//
+ //========================================================//
 
   // console.log(items.length)
 
@@ -51,9 +51,9 @@
 
 }());
 
-  //========================================================//
+   //========================================================//
   //----------------------(Question 2)----------------------//
-  //========================================================//
+ //========================================================//
 
 (function (){ // open fun
 
@@ -109,9 +109,9 @@
 
 }()); // close fun
 
-  //========================================================//
+   //========================================================//
   //----------------------(Question 3)----------------------//
-  //========================================================//
+ //========================================================//
 
 (function (){   
 
@@ -120,18 +120,18 @@
       if(item.currency_code === 'GBP'){
         return item};
     });
-     console.log(curCode)
+        // console.log(curCode)
 
     var gbpTitle = curCode.map(function(item){
       return item.title;
     });
-    console.log(gbpTitle);
+        // console.log(gbpTitle);
 
-          // assign array
+          // ASSIGN ARRAY
 
     var place = gbpTitle.shift()
 
-          // on da page
+          // ON DA PAGE
 
     var answer3 = document.querySelector('#answer3');
 
@@ -142,31 +142,70 @@
 
 }());
 
-  //========================================================//
+   //========================================================//
   //----------------------(Question 4)----------------------//
-  //========================================================//
+ //========================================================//
 
 (function (){
 
+    // Create a list & add to document(HTML) at given selector
+ function addList(selector, list) {
+   var container = document.querySelector(selector);
+   var ul = document.createElement('ul');
 
+   list.forEach(function(item){
+     var li = document.createElement('li');
+     var node = document.createTextNode(item);
 
+     li.appendChild(node);
+     ul.appendChild(li);
+   });
+
+   container.appendChild(ul);
+ };
+
+  var material = items.filter(function(item){
+    
+      return item.materials.indexOf('wood') !== -1;
+    
+  })
+
+  var ans4 = material.map(function(item){
+    return item.title + ' is made of wood.';
+  });
+
+  addList("#answer4",ans4)
 
 }());
 
-  //========================================================//
+   //========================================================//
   //----------------------(Question 5)----------------------//
-  //========================================================//
+ //========================================================//
 
 (function (){
 
+  // Create a list & add to document(HTML) at given selector
+ function addList(selector, list) {
+   var container = document.querySelector(selector);
+   var ul = document.createElement('ul');
 
+   list.forEach(function(item){
+     var li = document.createElement('li');
+     var node = document.createTextNode(item);
+
+     li.appendChild(node);
+     ul.appendChild(li);
+   });
+
+   container.appendChild(ul);
+ };
 
 
 
 }());
-  //========================================================//
+   //========================================================//
   //----------------------(Question 6)----------------------//
-  //========================================================//
+ //========================================================//
 (function (){
 
 
