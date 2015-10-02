@@ -115,11 +115,30 @@
 
 (function (){   
 
-  ////////////////////    Map GBP   ///////////////////////
-    var curCode = items.map(function(item){
-      return items.currency_code('');
+  /////////////////   Filter + Map GBP   ///////////////////
+    var curCode = items.filter(function(item){
+      if(item.currency_code === 'GBP'){
+        return item};
     });
      console.log(curCode)
+
+    var gbpTitle = curCode.map(function(item){
+      return item.title;
+    });
+    console.log(gbpTitle);
+
+          // assign array
+
+    var place = gbpTitle.shift()
+
+          // on da page
+
+    var answer3 = document.querySelector('#answer3');
+
+    var textNode = document.createTextNode(place);
+
+    answer3.appendChild(textNode); 
+
 
 }());
 
