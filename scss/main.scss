@@ -2,47 +2,51 @@ $grey: #EEEEEE;
 
 
 
-body{
+body {
   max-width: 100%;
   text-align: center;
   text-decoration: none;
   list-style: none;
 }
 
-.header{
+.header {
   width: 100%;
   max-width: 100%;
   overflow: auto;
-  .nav{
+  .nav {
     float: left;
     padding-left: 20px;
     font-size: 1.2em;
   }
 }
 
-img{
+img {
   width: 100%;
 }
 
-.wrapper{
+.wrapper {
   background-color: $grey;
-  .answertxt{
+  .answertxt {
     margin-top: 0;
     padding-top: 20px;
     padding-bottom: 20px;
   }
 }
 
-.answertxt{
+.answertxt {
   font-size: 40px;
 }
 
-p{
+p {
   margin-bottom: 0;
   padding-bottom: 20px;
 }
 
-footer{
+.list{
+  list-style-type: none;
+}
+
+footer {
   background-color: #4B494F;
   color: #939394;
   padding: 40px 0;
