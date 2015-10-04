@@ -1,0 +1,36 @@
+body {
+  max-width: 100%;
+  text-align: center;
+  text-decoration: none;
+  list-style: none; }
+
+.header {
+  width: 100%;
+  max-width: 100%;
+  overflow: auto; }
+  .header .nav {
+    float: left;
+    padding-left: 20px;
+    font-size: 1.2em; }
+
+img {
+  width: 100%; }
+
+.wrapper {
+  background-color: #EEEEEE; }
+  .wrapper .answertxt {
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+
+.answertxt {
+  font-size: 40px; }
+
+p {
+  margin-bottom: 0;
+  padding-bottom: 20px; }
+
+footer {
+  background-color: #4B494F;
+  color: #939394;
+  padding: 40px 0; }
