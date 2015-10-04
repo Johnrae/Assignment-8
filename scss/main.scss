@@ -18,10 +18,17 @@ body {
     padding-left: 20px;
     font-size: 1.2em;
   }
+  .headerImage {
+    height: 194px;
+  }
 }
 
 img {
   width: 100%;
+}
+
+ul {
+  list-style: none;
 }
 
 .wrapper {
