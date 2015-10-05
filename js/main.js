@@ -148,7 +148,7 @@
 
 (function (){
 
-    // Create a list & add to document(HTML) at given selector
+    // creates list and node
  function addList(selector, list) {
    var container = document.querySelector(selector);
    var ul = document.createElement('ul');
@@ -163,13 +163,13 @@
 
    container.appendChild(ul);
  };
-
+ ///////////filtering items made of wood/////////
   var material = items.filter(function(item){
     
       return item.materials.indexOf('wood') !== -1;
     
   })
-
+/////////returning item title///////
   var ans4 = material.map(function(item){
     return item.title + ' is made of wood.';
   });
@@ -184,7 +184,7 @@
 
 (function (){
 
-  // Create a list & add to document(HTML) at given selector
+  // adds list and node to html
  function addList(selector, list) {
    var container = document.querySelector(selector);
    var ul = document.createElement('ul');
@@ -232,7 +232,7 @@
   //----------------------(Question 6)----------------------//
  //========================================================//
 (function (){
-
+// adds paragraph and 
  function addParagraph(selector, text) {
     var container = document.querySelector(selector);
     var p = document.createElement('p');
