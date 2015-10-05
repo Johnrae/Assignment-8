@@ -232,7 +232,7 @@
   //----------------------(Question 6)----------------------//
  //========================================================//
 (function (){
-// adds paragraph and 
+// adds paragraph and appends html
  function addParagraph(selector, text) {
     var container = document.querySelector(selector);
     var p = document.createElement('p');
@@ -241,7 +241,7 @@
     container.appendChild(p);
    };
 
-    //
+    
 
   var madeBy = items.filter(function(item){
     return item['who_made'] === 'i_did';
